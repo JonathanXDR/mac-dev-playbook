@@ -13,9 +13,18 @@ dockitems_remove: []
 # - Podcasts
 # - 'App Store'
 dockitems_persist: []
-# - name: "Sublime Text"
-#   path: "/Applications/Sublime Text.app/"
-#   pos: 5
+- name: "Arc"
+  path: "/Applications/Arc.app"
+- name: "Notion"
+  path: "/Applications/Notion.app"
+- name: "Visual Studio Code"
+  path: "/Applications/Visual Studio Code.app"
+- name: "Microsoft Teams"
+  path: "/Applications/Microsoft Teams.app"
+- name: "Discord"
+  path: "/Applications/Discord.app"
+- name: "GitKraken"
+  path: "/Applications/GitKraken.app"
 
 configure_sudoers: false
 sudoers_custom_config: |
