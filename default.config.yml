@@ -26,44 +26,61 @@ dotfiles_repo: https://github.com/JonathanXDR/dotfiles.git
 dotfiles_repo_accept_hostkey: true
 dotfiles_repo_local_destination: ~/Development/GitHub/dotfiles
 dotfiles_files:
+  - .bash_profile
+  - .bashrc
+  - .gitconfig
+  - .npmrc
+  - .zprofile
   - .zshrc
-  - .gitignore
-  - .inputrc
-  - .osx
-  - .vimrc
+  - Brewfile
 
 homebrew_installed_packages:
-  # - ansible # Installed via Pip.
-  - autoconf
-  - bash-completion
-  - doxygen
-  - gettext
-  - gifsicle
-  - git
-  - gh
-  - go
-  - gpg
-  - httpie
-  - iperf
-  - libevent
-  - sqlite
-  - mcrypt
-  - nmap
-  - node
-  - nvm
-  - php
-  - ssh-copy-id
+  - python
+  - azure-cli
+  - bash
+  - emacs
+  - cloudflared
+  - colima
   - cowsay
-  - readline
-  - openssl
-  - pv
+  - curl
+  - dockutil
+  - node
+  - eslint
+  - ffmpeg
+  - gh
+  - git
+  - grep
+  - helm
+  - jq
+  - k9s
+  - lolcat
+  - mackup
+  - mariadb
+  - minikube
+  - nvm
+  - opa
+  - openjdk
+  - poetry
+  - postgresql
+  - prettier
+  - putty
+  - redis
+  - snyk-cli
+  - speedtest-cli
+  - swagger-codegen
+  - telnet
+  - vite
   - wget
-  - wrk
-  - zsh-history-substring-search
+  - yt-dlp
+  - zsh
 
 homebrew_taps:
-  - homebrew/core
+  - homebrew/autoupdate
+  - homebrew/bundle
   - homebrew/cask
+  - homebrew/core
+  - homebrew/services
+  - ubuntu/microk8s
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
