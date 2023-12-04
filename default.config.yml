@@ -12,7 +12,7 @@ dockitems_remove: []
 # - TV
 # - Podcasts
 # - 'App Store'
-dockitems_persist: []
+dockitems_persist:
 - name: "Arc"
   path: "/Applications/Arc.app"
 - name: "Notion"
@@ -135,6 +135,7 @@ homebrew_cask_apps:
   - aldente
   - nordvpn
   - logi-options-plus
+  - focusrite-control-2
   # gaming
   - steam
   - minecraft
