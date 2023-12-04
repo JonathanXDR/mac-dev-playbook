@@ -67,24 +67,66 @@ homebrew_taps:
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
-  - chromedriver
-  - docker
-  - dropbox
-  - firefox
+  # browsers
+  - arc
   - google-chrome
-  - handbrake
-  - licecap
-  - sequel-ace
+  - firefox-developer-edition
+  # dev
+  - docker
+  - gitkraken
+  - github
+  - fig
+  - visual-studio-code
+  - jetbrains-toolbox
+  - jetbrains-gateway
+  - intellij-idea
+  - android-studio
+  - tableplus
+  - mongodb-compass
+  - httpie
+  - postman
+  - asset-catalog-tinkerer
+  - sf-symbols
+  - unity-hub
+  # productivity
+  - figma
+  - notion
+  - miro
+  - obs
+  - blender
+  - citrix-workspace
+  - bricklink-studio
+  - autodesk-fusion360
+  # communication
+  - discord
   - slack
-  - sublime-text
-  - transmit
+  - microsoft-teams
+  # macos tools
+  - tg-pro
+  - raycast
+  - bartender
+  - vivid
+  - soundsource
+  - aldente
+  - nordvpn
+  - logi-options-plus
+  # gaming
+  - steam
+  - minecraft
+  - dolphin
+  - openemu
+  - desmume
+  # other
+  - keyboardcleantool
+  - intune-company-portal
+  - adobe-acrobat-reader
 
 # See `JonathanXDR.mas` role documentation for usage instructions.
 mas_installed_apps: []
-mas_email: ''
-mas_password: ''
+mas_email: ""
+mas_password: ""
 
-osx_script: '~/.osx --no-restart'
+osx_script: "~/.osx --no-restart"
 
 # Install packages from other package managers.
 # Note: You are responsible for making sure the required package managers are
