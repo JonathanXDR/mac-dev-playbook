@@ -45,11 +45,11 @@ Before starting, I completed Apple's mandatory macOS setup wizard (creating a lo
     - Preferences > Advanced > "Show full website address"
     - Preferences > Advanced > "Show Develop menu in menu bar"
   - Dock:
-    - Add jgeerling, Downloads, Applications, and Video Projects folders
+    - Add jonathan, Downloads, Applications, and Video Projects folders
   - Terminal:
     - Preferences > Profiles > Set JJG-Term as the default theme
 - _After Dropbox Sync completes_: Run the playbook with `--tags post` to complete setup.
-- Symlink the synchronized `config.yml` into the playbook dir: `ln -s /Users/jgeerling/Dropbox/Apps/Config/mac-dev-playbook/config.yml /Users/jgeerling/Development/mac-dev-playbook/config.yml`
+- Symlink the synchronized `config.yml` into the playbook dir: `ln -s /Users/jonathan/Dropbox/Apps/Config/mac-dev-playbook/config.yml /Users/jonathan/Development/mac-dev-playbook/config.yml`
 - These things might be automatable, but I do them manually right now:
   - Configure Time Machine backup drive and [Time Machine Editor](https://tclementdev.com/timemachineeditor/) (if needed)
   - Install Wireguard from App Store and add configuration (if needed)
@@ -60,32 +60,32 @@ The following tasks have to wait for the initial Dropbox sync to complete before
 
 ```
 # ZSH Aliases.
-ln -s /Users/jgeerling/Dropbox/Apps/Config/.aliases /Users/jgeerling/.aliases
+ln -s /Users/jonathan/Dropbox/Apps/Config/.aliases /Users/jonathan/.aliases
 
 # Electrum BTC Wallet.
-ln -s /Users/jgeerling/Dropbox/Apps/Electrum/default_wallet /Users/jgeerling/.electrum/wallets/default_wallet
+ln -s /Users/jonathan/Dropbox/Apps/Electrum/default_wallet /Users/jonathan/.electrum/wallets/default_wallet
 
 # SSH setup.
 ssh-keygen  # and create a default key to set up .ssh folder
-sudo ln -s /Users/jgeerling/Dropbox/Apps/Config/ssh/config ~/.ssh/config
+sudo ln -s /Users/jonathan/Dropbox/Apps/Config/ssh/config ~/.ssh/config
 # TODO - Manually copy any shared SSH keys that are needed.
 
 # Ansible setup.
 sudo mkdir -p /etc/ansible
-sudo ln -s /Users/jgeerling/Dropbox/Apps/Config/ansible/ansible.cfg /etc/ansible/ansible.cfg
-sudo ln -s /Users/jgeerling/Dropbox/Apps/Config/ansible/hosts /etc/ansible/hosts
-sudo ln -s /Users/jgeerling/Dropbox/VMs/roles /etc/ansible/roles
-mkdir -p /Users/jgeerling/.ansible
-ln -s /Users/jgeerling/Dropbox/Apps/Config/ansible/galaxy_token /Users/jgeerling/.ansible/galaxy_token
-ln -s /Users/jgeerling/Dropbox/Apps/Config/ansible/mm-vault-password.txt /Users/jgeerling/.ansible/mm-vault-password.txt
-ln -s /Users/jgeerling/Dropbox/VMs/ /Users/jgeerling/.ansible/collections
+sudo ln -s /Users/jonathan/Dropbox/Apps/Config/ansible/ansible.cfg /etc/ansible/ansible.cfg
+sudo ln -s /Users/jonathan/Dropbox/Apps/Config/ansible/hosts /etc/ansible/hosts
+sudo ln -s /Users/jonathan/Dropbox/VMs/roles /etc/ansible/roles
+mkdir -p /Users/jonathan/.ansible
+ln -s /Users/jonathan/Dropbox/Apps/Config/ansible/galaxy_token /Users/jonathan/.ansible/galaxy_token
+ln -s /Users/jonathan/Dropbox/Apps/Config/ansible/mm-vault-password.txt /Users/jonathan/.ansible/mm-vault-password.txt
+ln -s /Users/jonathan/Dropbox/VMs/ /Users/jonathan/.ansible/collections
 
 # Final Cut Pro setup. (Open Motion first)
-cp -r /Users/jgeerling/Dropbox/Apps/Config/Motion/Motion\ Templates.localized/ /Users/jgeerling/Movies/Motion\ Templates.localized/
-cp -r /Users/jgeerling/Dropbox/Apps/Config/Motion/Text\ Styles/ /Users/jgeerling/Library/Application\ Support/Motion/Library/Text\ Styles.localized/
+cp -r /Users/jonathan/Dropbox/Apps/Config/Motion/Motion\ Templates.localized/ /Users/jonathan/Movies/Motion\ Templates.localized/
+cp -r /Users/jonathan/Dropbox/Apps/Config/Motion/Text\ Styles/ /Users/jonathan/Library/Application\ Support/Motion/Library/Text\ Styles.localized/
 
 # Sequel Ace favorites. (Open Sequel Ace first)
-cp /Users/jgeerling/Dropbox/Apps/Config/Sequel\ Ace/Favorites.plist /Users/jgeerling/Library/Containers/com.sequel-ace.sequel-ace/Data/Library/Application\ Support/Sequel\ Ace/Data/Favorites.plist
+cp /Users/jonathan/Dropbox/Apps/Config/Sequel\ Ace/Favorites.plist /Users/jonathan/Library/Containers/com.sequel-ace.sequel-ace/Data/Library/Application\ Support/Sequel\ Ace/Data/Favorites.plist
 
 # Font setup.
 cp ~/Dropbox/Apps/Config/Fonts/* ~/Library/Fonts/
