@@ -96,7 +96,6 @@ homebrew_cask_apps:
   # browsers
   - arc
   - google-chrome
-  - firefox-developer-edition
   # dev
   - docker
   - gitkraken
@@ -104,7 +103,6 @@ homebrew_cask_apps:
   - fig
   - visual-studio-code
   - jetbrains-toolbox
-  - jetbrains-gateway
   - intellij-idea
   - android-studio
   - tableplus
