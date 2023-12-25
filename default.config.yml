@@ -6,7 +6,7 @@ configure_terminal: true
 configure_osx: true
 
 # Set to 'true' to configure the Dock via dockutil.
-configure_dock: false
+configure_dock: true
 dockitems_remove: []
 # - Launchpad
 # - TV
@@ -33,7 +33,7 @@ sudoers_custom_config: |
 
 dotfiles_repo: https://github.com/JonathanXDR/Dotfiles.git
 dotfiles_repo_accept_hostkey: true
-dotfiles_repo_local_destination: ~/Developer/GitHub/dotfiles
+dotfiles_repo_local_destination: ~/Developer/Git/GitHub/dotfiles
 dotfiles_files:
   - .bash_profile
   - .bashrc
