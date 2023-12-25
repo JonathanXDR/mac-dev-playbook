@@ -33,7 +33,7 @@ sudoers_custom_config: |
 
 dotfiles_repo: https://github.com/JonathanXDR/Dotfiles.git
 dotfiles_repo_accept_hostkey: true
-dotfiles_repo_local_destination: ~/Development/GitHub/dotfiles
+dotfiles_repo_local_destination: ~/Developer/GitHub/dotfiles
 dotfiles_files:
   - .bash_profile
   - .bashrc
@@ -109,7 +109,6 @@ homebrew_cask_apps:
   - mongodb-compass
   - httpie
   - postman
-  - asset-catalog-tinkerer
   - sf-symbols
   - unity-hub
   # productivity
