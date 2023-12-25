@@ -20,7 +20,7 @@ dockitems_persist:
   - name: "Visual Studio Code"
     path: "/Applications/Visual Studio Code.app"
   - name: "Microsoft Teams"
-    path: "/Applications/Microsoft Teams.app"
+    path: "/Applications/Microsoft Teams (work or school).app"
   - name: "Discord"
     path: "/Applications/Discord.app"
   - name: "GitKraken"
