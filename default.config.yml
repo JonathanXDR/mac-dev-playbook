@@ -39,6 +39,7 @@ dotfiles_files:
   - .bashrc
   - .gitconfig
   - .npmrc
+  - .osx
   - .zprofile
   - .zshrc
   - Brewfile
