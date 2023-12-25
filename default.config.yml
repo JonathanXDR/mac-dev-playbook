@@ -13,25 +13,25 @@ dockitems_remove: []
 # - Podcasts
 # - 'App Store'
 dockitems_persist:
-- name: "Arc"
-  path: "/Applications/Arc.app"
-- name: "Notion"
-  path: "/Applications/Notion.app"
-- name: "Visual Studio Code"
-  path: "/Applications/Visual Studio Code.app"
-- name: "Microsoft Teams"
-  path: "/Applications/Microsoft Teams.app"
-- name: "Discord"
-  path: "/Applications/Discord.app"
-- name: "GitKraken"
-  path: "/Applications/GitKraken.app"
+  - name: "Arc"
+    path: "/Applications/Arc.app"
+  - name: "Notion"
+    path: "/Applications/Notion.app"
+  - name: "Visual Studio Code"
+    path: "/Applications/Visual Studio Code.app"
+  - name: "Microsoft Teams"
+    path: "/Applications/Microsoft Teams.app"
+  - name: "Discord"
+    path: "/Applications/Discord.app"
+  - name: "GitKraken"
+    path: "/Applications/GitKraken.app"
 
 configure_sudoers: false
 sudoers_custom_config: |
   # Allow users in admin group to use sudo with no password.
   %admin ALL=(ALL) NOPASSWD: ALL
 
-dotfiles_repo: https://github.com/JonathanXDR/dotfiles.git
+dotfiles_repo: https://github.com/JonathanXDR/Dotfiles.git
 dotfiles_repo_accept_hostkey: true
 dotfiles_repo_local_destination: ~/Development/GitHub/dotfiles
 dotfiles_files:
@@ -149,7 +149,10 @@ homebrew_cask_apps:
 mas_installed_apps:
   - { id: 310633997, name: "WhatsApp (23.23.81)" }
   - { id: 1502839586, name: "Hand Mirror (3.0.1)" }
-  - { id: 1576663233, name: "Alto's Adventure The Spirit of the Mountain (1.0.7)" }
+  - {
+      id: 1576663233,
+      name: "Alto's Adventure The Spirit of the Mountain (1.0.7)",
+    }
   - { id: 462058435, name: "Microsoft Excel (16.79.1)" }
   - { id: 1606941598, name: "Affinity Publisher 2 (2.3.0)" }
   - { id: 1462114288, name: "Grammarly for Safari (9.70)" }
