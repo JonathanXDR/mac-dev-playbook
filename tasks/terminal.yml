@@ -8,13 +8,13 @@
 
 - name: Ensure custom Terminal profile is added.
   copy:
-    src: files/terminal/Basic Black.terminal
-    dest: /tmp/Basic Black.terminal
+    src: files/terminal/Basic\ Black.terminal
+    dest: /tmp/Basic\ Black.terminal
   changed_when: false
   when: "'Basic Black' not in terminal_theme.stdout"
 
 - name: Ensure custom Terminal profile is added.
-  command: open /tmp/Basic Black.terminal
+  command: open /tmp/Basic\ Black.terminal
   changed_when: false
   when: "'Basic Black' not in terminal_theme.stdout"
 
