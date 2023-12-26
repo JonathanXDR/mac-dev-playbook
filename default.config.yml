@@ -48,17 +48,19 @@ homebrew_installed_packages:
   - python
   - azure-cli
   - bash
-  - emacs
   - cloudflared
   - colima
   - cowsay
   - curl
   - dockutil
+  - emacs
   - node
   - eslint
   - ffmpeg
   - gh
   - git
+  - github-keygen
+  - gnupg
   - grep
   - helm
   - jq
@@ -66,10 +68,12 @@ homebrew_installed_packages:
   - lolcat
   - mackup
   - mariadb
+  - mas
   - minikube
   - nvm
   - opa
   - openjdk
+  - pinentry-mac
   - poetry
   - postgresql
   - prettier
@@ -77,6 +81,7 @@ homebrew_installed_packages:
   - redis
   - snyk-cli
   - speedtest-cli
+  - stow
   - swagger-codegen
   - telnet
   - vite
@@ -85,11 +90,14 @@ homebrew_installed_packages:
   - zsh
 
 homebrew_taps:
+  - buo/cask-upgrade
   - homebrew/autoupdate
   - homebrew/bundle
   - homebrew/cask
+  - homebrew/cask-fonts
   - homebrew/core
   - homebrew/services
+  - hpedrorodrigues/tools
   - ubuntu/microk8s
 
 homebrew_cask_appdir: /Applications
